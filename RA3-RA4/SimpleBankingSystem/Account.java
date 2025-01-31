@@ -60,6 +60,8 @@ public class Account {
     {
     	if (amount < 0)
     		throw new Exception ("No es pot retirar una quantitat negativa.");
+		throw new Exception ("No es pot retirar una quantitat negativa.");
+
     	if (getBalance()< amount)
     		throw new Exception ("No hi ha suficient saldo");
     	balance -= amount;
